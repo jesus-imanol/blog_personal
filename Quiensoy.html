@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quien soy?</title>
+    <style>
+        
+    body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2f3542;
+
+}
+/* Estilos generales del header */
+header {
+    background-color: #ff5e5e;
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    padding: 70px; /* Ajusta el relleno según tus necesidades */
+    width: 100%;
+    height: 10%;
+    display: flex; /* Establece la presentación flex para organizar los elementos en una fila o columna */
+    justify-content: space-around; /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ajusta el índice z según sea necesario para evitar solapamientos con otros elementos */
+  }
+  
+  /* Estilos para la imagen del header */
+  header img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+  }
+  
+  /* Estilos para la lista de navegación */
+  #navbar {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Establece la presentación flex para organizar los elementos en una fila */
+    margin: 0;
+    box-shadow: gray 30,40,30;
+  }
+  
+  #navbar li {
+    margin: 0;
+  }
+  
+  /* Estilos para los enlaces en la fila */
+  .header_nav {
+    text-decoration: none;
+    color: black; /* Color normal del texto */
+    padding: 10px; /* Espaciado interno */
+    transition: color 0.3s; /* Transición suave del color durante 0.3 segundos */
+  }
+  
+  .header_nav:hover {
+    color: blue; /* Cambia el color al pasar el cursor sobre el enlace */
+  }
+  .size_header{
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: blue 20px 30px 20px;
+  }
+  #img-jesus{
+border-radius: 100px;
+  }
+  .hijo{
+        height: 100%;
+        background-color: #2f3542;
+        justify-content: center;
+        margin-top: 100px;
+        border-color: black 10px;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+
+  }
+  .hijo h1 {
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+.animation-text-1 {
+  margin-top: 50px;
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  align-items: center;
+  text-align: center;
+}
+
+.animation-text-1 span{
+  position: relative;
+}
+
+.animation-text-1 span::before{
+  content: "</> Developer";
+  color: aqua;
+  animation: words 20s infinite;
+
+}
+.animation-text-1 span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #2f3542;
+  border-color: 2px solid aqua;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+
+
+}
+@keyframes cursor{
+  to{
+    border-color: 2px solid #ff7f5000;
+  }
+}
+@keyframes words{
+  0%, 20%{
+    content: "</> Service";
+  }
+  21%, 40%{
+    content: "Dispocision";
+  }
+  41%, 60%{
+    content: "Service";
+  }
+  61%, 80%{
+    content: "</> UP Chiapas";
+  }
+  81%, 100%{
+    content: "Please !";
+  }
+
+    
+}
+@keyframes typing{
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+  width: calc(100% + 8px);
+  }
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="mainHeader">
+    <img src="public/jesus2.jpg" alt="" id="img-jesus" width="200px" height="200px">
+    <nav id="navbar">
+        <li><a href="index.html" class="header_nav">Inicio</a></li>
+        <li><a href="Quiensoy.html" class="header_nav">Quien Soy</a></li>
+        <li><a href="portafolio.html" class="header_nav">Portafolio</a></li>
+        <li><a href="https://www.instagram.com/chuyssc/" class="header_nav"  target="_blank">Blog</a></li>
+        <li><a href="Contactos.html" class="header_nav">Contactos</a></li>
+    </nav>
+</header>
+
+    <div class="padre">
+      <div class="hijo">
+
+        <br><br><br><br><br><br>
+        <h1> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z"/></svg>  
+          Jesús Imanol Castillo Avendaño </h1><br><br>
+
+          <img src="public/jesus2.jpg" width="200px" height="200px" id="img-jesus">
+                     
+              <h1> Ingeniero en Software</h1>
+
+      </div>
+    </div>
+
+    <div class="animation-text-1">
+      I´m by your
+      <span></span>
+    </div>
+
+    <div class="animation-text-1">
+      <p>Quien no demuestra lo que siente, tal vez pierda lo que quiere</p>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style>
+        
+    body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2f3542;
+
+}
+
+/* Estilos generales del header */
+header {
+    background-color: #ff6161;
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    padding: 70px; /* Ajusta el relleno según tus necesidades */
+    width: 100%;
+    height: 10%;
+    display: flex; /* Establece la presentación flex para organizar los elementos en una fila o columna */
+    justify-content: space-around; /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ajusta el índice z según sea necesario para evitar solapamientos con otros elementos */
+  }
+  
+  /* Estilos para la imagen del header */
+  header img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+  }
+  
+  /* Estilos para la lista de navegación */
+  #navbar {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Establece la presentación flex para organizar los elementos en una fila */
+    margin: 0;
+    box-shadow: gray 30,40,30;
+  }
+  
+  #navbar li {
+    margin: 0;
+  }
+  
+  /* Estilos para los enlaces en la fila */
+  .header_nav {
+    text-decoration: none;
+    color: black; /* Color normal del texto */
+    padding: 10px; /* Espaciado interno */
+    transition: color 0.3s; /* Transición suave del color durante 0.3 segundos */
+  }
+  
+  .header_nav:hover {
+    color: blue; /* Cambia el color al pasar el cursor sobre el enlace */
+  }
+  .size_header{
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: blue 20px 30px 20px;
+  }
+  .img-jesus{
+border-radius: 100px;
+  }
+  .hijo{
+        height: 100%;
+        background-color: #2f3542;
+        justify-content: center;
+        margin-top: 140px;
+        border-color: black 10px;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+
+  }
+  .hijo h1 {
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+.animation-text-1 {
+  margin-top: 50px;
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  align-items: center;
+  text-align: center;
+}
+
+.animation-text-1 span{
+  position: relative;
+}
+
+.animation-text-1 span::before{
+  content: "</> Developer";
+  color: yellow;
+  animation: words 20s infinite;
+
+}
+.animation-text-1 span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #2f3542;
+  border-color: 2px solid yellow;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+
+
+}
+.experiencia{
+    margin-top: 50px;
+    width: 100%;
+    font-weight: 15px bold;
+    height: 1200px;
+    
+}
+.php{
+ width: 50%;
+ height: 600px;
+ float: left;
+ align-items:center ;
+ justify-content: center;
+ text-align: center;
+}
+.js{
+ width: 50%;
+ height: 600px;
+ align-items: center;
+ float: right;
+ justify-content: center;
+ text-align: center;
+}
+.flutter{
+ width: 50%;
+ height: 600px;
+ align-items: center;
+ float: left;
+ justify-content: center;
+ text-align: center;
+}
+img{
+  content: center;  
+}
+.kotlin{
+ width: 50%;
+ height: 600px;
+ align-items: center;
+ float: right;
+ justify-content: center;
+ text-align: center;  
+}
+.p-experiencia{
+    text-align: justify;
+    width: 95%;
+    height: 400px;
+    overflow: auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 50px;
+
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: aqua;
+
+}
+.footer-index{
+  
+bottom: 0;
+background-color:chocolate;
+height: auto;
+width: 100%;
+text-align: center;
+}
+.p-footer{
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+
+@keyframes cursor{
+  to{
+    border-color: 2px solid #ff7f5000;
+  }
+}
+@keyframes words{
+  0%, 20%{
+    content: "</> Service";
+  }
+  21%, 40%{
+    content: "Dispocision";
+  }
+  41%, 60%{
+    content: "Section";
+  }
+  61%, 80%{
+    content: "</> UP Chiapas";
+  }
+  81%, 100%{
+    content: "Space";
+  }
+
+    
+}
+@keyframes typing{
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+  width: calc(100% + 8px);
+  }
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="mainHeader">
+    <img src="public/jesus2.jpg" alt="" class="img-jesus" width="200px" height="200px">
+    <nav id="navbar">
+        <li><a href="index.html" class="header_nav">Inicio</a></li>
+        <li><a href="Quiensoy.html" class="header_nav">Quien Soy</a></li>
+        <li><a href="portafolio.html" class="header_nav">Portafolio</a></li>
+        <li><a href="https://www.instagram.com/chuyssc/" class="header_nav"  target="_blank">Blog</a></li>
+        <li><a href="Contactos.html" class="header_nav">Contactos</a></li>
+    </nav>
+</header>
+<section>
+    <div class="padre">
+      <div class="hijo">
+
+        <br><br><br><br>
+
+
+          <img src="public/flow.jpg" width="200px" height="200px" class="img-jesus">
+                      
+          <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALNJREFUSEvtlNENgzAMRB+blE3oJmUTmIR2knaUblJ0SKAEQRIZ/IN634mffTmnwlmVc32uBWiAAbitbPsCL6Cz2Bla9AYE2VNvgYSAn6XD4I4mbYFPWOdMgOoKUucA1mTNDkT3tya4BiCXqFwelrfYskhJ0D4cURKgmKX2oQSsJp86eHZMZ/hS1wOgzjXBJA+AFk1v4AKIuveY4J76ixTNR0lEds4ofQJEsn4LxX38AVmrRkwyJBnWSpljAAAAAElFTkSuQmCC"/>
+              Portafolio</h1>
+
+      </div>
+    </div>
+
+    <div class="animation-text-1">
+      This is my
+      <span></span>
+    </div>
+
+    <div class="experiencia">
+        <div class="php">
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABLUlEQVRIS+2T/Q0BQRTE6UAJVIAK0AEdUAEqQAV0gApQAR3QAR3QAfO7zCbrkEPiD2GTyZPdt/Px1uVzH175D/Pn/gKZE/6tEQ01j7LQEU6Zs3HDKyPa+07pWXL60gK4rJkAl2AkFISt93eqB2ElzIS1zzlmH3AnSZkWwGXRF6l1NzKWhRDImxZrWADSjfu5R1/1nsA5PtRvXFeEidATWsIy2sfpwOd9VZIeLZ6YjxNABCEEEOEkjAV3uGb+B5NQ2UeYhDP3hKQ3CdpqmJqAiHU7wlnXrhCIjbCNMKZwzxk1JL1KADkiOGNRw0OSZCPgFGF655Fw+ENwh7FhMFnxiIgWjyH0PKohCcI89t2VFiDew+YUA0nGTjl8RiDL8Vvnr3zJf4G3JpB56fvf4AKrGEcZ/qQ8KgAAAABJRU5ErkJggg=="/>    PHP</h1>
+            <img src="public/php_image.jpg" alt="" class="img-jesus" width="200px" height="200px">
+            <p class="p-experiencia">Mi experiencia en PHP se centra en el desarrollo de aplicaciones web de alta calidad. He trabajado en proyectos que abarcan desde sitios web corporativos hasta aplicaciones complejas basadas en la web. Mi habilidad para escribir código limpio y eficiente en PHP me permite crear soluciones que cumplen con los requisitos del cliente y ofrecen una experiencia de usuario excepcional.</p>
+        </div>
+        <div class="js">
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA9klEQVRIS+2V4Q3BUBSF2wnYQG3ABNiADZgAE6gJ2IANGKEb0A2YgA04JzlXGom4ldfGj77ky3vROufec1/SOKp4xRXrR7UbPAJ19Cr8vYPGwBJuIvp61/43ohlqb4MNuIM1yEACVqCn3n7uoCuDk8RT7EOZcD/oeRCDEcTO4AYuEmZ3XEEMjhCaKJY59qnEgxlQaAuWEmb+jC6ogRXN4e/BTp2UiigrVNjHOQEcJm9QByyAxZXizNvkNuBVtGHaAHlFmTfNOGRbfM6IWIDbgH+mCdu/ggEYF0RZeQ5a+p3iXKUMCnru40cDt4L3xdq/yd7C3O89AVAVNhkXd2e2AAAAAElFTkSuQmCC"/>   Java Script</h1>
+            <img src="public/js.jpg" alt="" class="img-jesus" width="200px" height="200px">
+            <p class="p-experiencia">Mi enfoque principal se centra en el desarrollo frontend, donde JavaScript es la piedra angular de mis habilidades. He trabajado en proyectos que abarcan desde sitios web corporativos hasta aplicaciones web complejas, utilizando JavaScript para crear interfaces de usuario atractivas y altamente funcionales.</p>
+        </div>
+
+        <div class="flutter">
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA3klEQVRIS7WUURECMQxEew6wcFJwgAQccCgAFMApwBJSkED2o8wRciTZ0s70J233NUm3Q+k8hs76hQWc5WIH43KzxLD2HgwAAidD/Caxi8xnCyAlDlAmg7R4BkCJRwG0eATQJO4BmsV/Af4ivgaIiO9WjPaQ+NHzwV027JWRlibC2lXmRu2B+DZqtCWEFveaDAhsX+2funnNznMyygDIJBP/T6gsXg9UaQsaimy0OMCjrrk+7GVQ91uNxxr68/FqWADOUZBoBnQmWUA6EwYACIyGl6XHV09YgKFth7oDXiQNQhlyVjz7AAAAAElFTkSuQmCC"/>   Flutter</h1>
+            <img src="public/flutterr.jpg" alt="" class="img-jesus" width="200px" height="200px">
+            <p class="p-experiencia">Mi enfoque principal se centra en la creación de aplicaciones móviles utilizando Flutter. He trabajado en proyectos que van desde aplicaciones empresariales hasta aplicaciones de consumo, aprovechando las capacidades de Flutter para ofrecer experiencias consistentes en múltiples plataformas.</p>
+        </div>
+        <div class="kotlin">
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABXUlEQVRIS7WUgXHCMAxFwwZlg7BB2YBuQDcoG5QJgAnaDcoGsEG7AWxQRugI/Y+LOF2QHZM7605HYsv//3xZTJrKMamM34wleJKwvxJxYwhaAf8qz8r5EMkYgqVAD8qj8rUGwVagG+Wncl2DAPV8Ber5imzkLMLrNyWKLWgu/vM7U16U7x0Rz3eRIlioEqUAeaXPej8prcEI+FJyo6j76TNEBCjCY8A5wEG7kux9KL3/ZhnY9IS9W3gCADmMKoLCnQNnzcBWet47nG0niiVEvdieJ7DDqEWJB7B6/G+V5r/jaBZ6+e4WbiSeAG/xOOUnwBCwP/XI3TME1reQgLqcn7kBS/YtanLKT1v3DR7sW+6amp/W0GjAzPdk33KDRj8AQHE0YNYGvoyJZjbuovTPrj9gEVa4VkoQDVgRSSlBasAGSUoJbEaiAcuSlBIA0iovg5J7BY8QPIp9ra9O8A8KD1QZQAslQwAAAABJRU5ErkJggg=="/>  Kotlin</h1>
+            <img src="public/kotlin.png" alt="" class="img-jesus" width="200px" height="200px">
+            <p class="p-experiencia">Mi experiencia se centra en el desarrollo de aplicaciones Android utilizando Kotlin como lenguaje principal. He trabajado en proyectos que abarcan desde aplicaciones de consumo hasta soluciones empresariales, aprovechando las características poderosas y concisas de Kotlin.</p>
+
+        </div>
+    </div>
+</section>
+<footer  class="footer-index">
+
+    <p class="p-footer">Derechos Reservados <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></p>
+    <p>Universidad Politécnica de Chiapas</p>
+</footer>
+</body>
+</html>
